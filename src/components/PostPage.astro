@@ -74,6 +74,17 @@ const initialLayoutClass =
         if (existingMode === currentLayout) {
           console.debug("Layout already correct, skipping update to avoid flicker");
           postListContainer.classList.add("js-initialized");
+          
+          // 即使布局正确，也要确保按钮状态正确
+          const toggleButton = document.getElementById('right-sidebar-toggle');
+          if (toggleButton) {
+            if (currentLayout === 'grid') {
+              (toggleButton as HTMLElement).style.display = 'none';
+            } else {
+              (toggleButton as HTMLElement).style.display = 'flex';
+            }
+          }
+          
           publishLayoutInit();
           return;
         }
@@ -86,6 +97,16 @@ const initialLayoutClass =
       } else {
         // 移动端：只添加初始化标记，不更改布局（CSS已处理）
         postListContainer.classList.add("js-initialized");
+        
+        // 移动端也需要更新按钮状态
+        const toggleButton = document.getElementById('right-sidebar-toggle');
+        if (toggleButton) {
+          if (currentLayout === 'grid') {
+            (toggleButton as HTMLElement).style.display = 'none';
+          } else {
+            (toggleButton as HTMLElement).style.display = 'flex';
+          }
+        }
       }
       
       // 发布布局初始化事件
@@ -116,6 +137,12 @@ const initialLayoutClass =
         (rightSidebar as HTMLElement).classList.add('hidden-in-grid-mode');
       }
       
+      // 同时隐藏右侧边栏控制按钮
+      const toggleButton = document.getElementById('right-sidebar-toggle');
+      if (toggleButton) {
+        (toggleButton as HTMLElement).style.display = 'none';
+      }
+      
       // 调整主网格布局以使用更多空间
       const mainGrid = document.getElementById('main-grid');
       if (mainGrid) {
@@ -131,6 +158,12 @@ const initialLayoutClass =
       const rightSidebar = document.querySelector('.right-sidebar-container');
       if (rightSidebar) {
         (rightSidebar as HTMLElement).classList.remove('hidden-in-grid-mode');
+      }
+      
+      // 同时显示右侧边栏控制按钮
+      const toggleButton = document.getElementById('right-sidebar-toggle');
+      if (toggleButton) {
+        (toggleButton as HTMLElement).style.display = 'flex';
       }
       
       // 恢复主网格布局
