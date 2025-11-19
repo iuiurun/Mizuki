@@ -109,7 +109,7 @@ export const siteConfig: SiteConfig = {
 		position: "center", // 等同于 object-position，仅支持 'top', 'center', 'bottom'。默认为 'center'
 
 		carousel: {
-			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
+			enable: false, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
 
 			interval: 1.5, // 轮播间隔时间（秒）
 		},
@@ -130,7 +130,7 @@ export const siteConfig: SiteConfig = {
 		// 请自行搭建API
 
 		homeText: {
-			enable: true, // 在主页显示自定义文本
+			enable: false, // 在主页显示自定义文本
 			title: "逐梦逸风", // 主页横幅主标题
 
 			subtitle: [
@@ -377,17 +377,17 @@ export const commentConfig: CommentConfig = {
 	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
 		envId: "https://twikoo.vercel.app",
-		lang: "en", // 设置 Twikoo 评论系统语言为英文
+		lang: "zh_CN", // 设置 Twikoo 评论系统语言为英文
 	},
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "Announcement", // 公告标题
-	content: "Welcome to my blog! This is a sample announcement.", // 公告内容
+	title: "没有公告", // 公告标题
+	content: "不想开公共，不想写", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
-		text: "Learn More", // 链接文本
+		text: "更多", // 链接文本
 		url: "/about/", // 链接 URL
 		external: false, // 内部链接
 	},
@@ -443,7 +443,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 组件类型：公告组件
 			type: "announcement",
 			// 是否启用该组件（现在通过统一配置控制）
-			enable: true,
+			enable: false,
 			// 组件显示顺序
 			order: 2,
 			// 组件位置："top" 表示固定在顶部
