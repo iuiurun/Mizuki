@@ -319,6 +319,18 @@ export const navBarConfig: NavBarConfig = {
 				},
 			],
 		},
+		
+		
+		{
+			name: "开往",
+			url: "https://www.travellings.cn/train.html",
+			icon: "fas fa-subway",
+				},
+			],
+		},
+
+
+		
 	],
 };
 
