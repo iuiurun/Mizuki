@@ -585,7 +585,7 @@ export const widgetConfigs = {
 export const umamiConfig = {
 	enabled: true, // 是否显示Umami统计
 	apiKey: import.meta.env.UMAMI_API_KEY || "api_McO7735AmEEzbRLAunne4BdZWxEIPfrS", // API密钥优先从环境变量读取，否则使用配置文件中的值
-	baseUrl: "https://api.umami.is", // Umami Cloud API地址
+	baseUrl: "https://cloud.umami.is/analytics/us/share/3175f5GafkUm3lNN", // Umami Cloud API地址
 	scripts: `
 <script defer src="https://cloud.umami.is/script.js" data-website-id="5790da17-2a77-48c9-83e6-dc7c97b7e6fd"></script>
   `.trim(), // 上面填你要插入的Script,不用再去Layout中插入
