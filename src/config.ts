@@ -22,15 +22,24 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "逐梦逸风",
 	subtitle: "s' Blog",
+<<<<<<< HEAD
 	siteURL: "https://skymzk.netlify.app/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
+=======
+	siteURL: "https://mizuki.mysqil.com/", // 请替换为你的站点URL，以斜杠结尾
+	siteStartDate: "2025-09-09", // 站点开始运行日期，用于站点统计组件计算运行天数
+>>>>>>> 266a86d74c5d7284999a4a77d98e3cb59108d51a
 
 	timeZone: SITE_TIMEZONE,
 
 	lang: SITE_LANG,
 
 	themeColor: {
+<<<<<<< HEAD
 		hue: 278, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
+=======
+		hue: 255, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
+>>>>>>> 266a86d74c5d7284999a4a77d98e3cb59108d51a
 		fixed: true, // 对访问者隐藏主题色选择器
 	},
 
@@ -113,7 +122,7 @@ export const siteConfig: SiteConfig = {
 		position: "center", // 等同于 object-position，仅支持 'top', 'center', 'bottom'。默认为 'center'
 
 		carousel: {
-			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
+			enable: false, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
 
 			interval: 1.5, // 轮播间隔时间（秒）
 		},
@@ -135,12 +144,16 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: false, // 在主页显示自定义文本
+<<<<<<< HEAD
 			title: "美しいミズキ", // 主页横幅主标题
+=======
+			title: "逐梦逸风", // 主页横幅主标题
+>>>>>>> 266a86d74c5d7284999a4a77d98e3cb59108d51a
 
 			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
+				"这是什么鬼☠",
+				"汪汪汪",
+				"八个压路",
 				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
 				"今日はなんでもない日。でも、ちょっとだけいい日",
 			],
@@ -234,6 +247,7 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
+<<<<<<< HEAD
 		{
 			name: "About",
 			url: "/about/",
@@ -265,6 +279,40 @@ export const navBarConfig: NavBarConfig = {
 					name: "Timeline",
 					url: "/timeline/",
 					icon: "material-symbols:timeline",
+=======
+		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
+		{
+			name: "Links",
+			url: "/links/",
+			icon: "material-symbols:link",
+			children: [
+				{
+					name: "GitHub",
+					url: "https://github.com/matsuzaka-yuki/Mizuki",
+					external: true,
+					icon: "fa6-brands:github",
+				},
+				{
+					name: "Bilibili",
+					url: "https://space.bilibili.com/701864046",
+					external: true,
+					icon: "fa6-brands:bilibili",
+				},
+				{
+					name: "Gitee",
+					url: "https://gitee.com/matsuzakayuki/Mizuki",
+					external: true,
+					icon: "mdi:git",
+				},
+			],
+		},
+
+
+		{
+			name: "开往",
+			url: "https://www.travellings.cn/train.html",
+			icon: "fas fa-subway",
+>>>>>>> 266a86d74c5d7284999a4a77d98e3cb59108d51a
 				},
 				{
 					name: "统计",
@@ -274,6 +322,9 @@ export const navBarConfig: NavBarConfig = {
 				},
 			],	
 		},
+
+
+		
 	],
 };
 
@@ -281,7 +332,11 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "逐梦逸风",
+<<<<<<< HEAD
 	bio: "花有重开日，人无再少年。",
+=======
+	bio: "🎉花有重开日，人无再少年🏃🏻‍♂‍➡",
+>>>>>>> 266a86d74c5d7284999a4a77d98e3cb59108d51a
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
@@ -333,17 +388,17 @@ export const commentConfig: CommentConfig = {
 	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
 		envId: "https://twikoo.vercel.app",
-		lang: "en", // 设置 Twikoo 评论系统语言为英文
+		lang: "zh_CN", // 设置 Twikoo 评论系统语言为英文
 	},
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "Announcement", // 公告标题
-	content: "Welcome to my blog! This is a sample announcement.", // 公告内容
+	title: "没有公告", // 公告标题
+	content: "不想开公共，不想写", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
-		text: "Learn More", // 链接文本
+		text: "更多", // 链接文本
 		url: "/about/", // 链接 URL
 		external: false, // 内部链接
 	},
@@ -374,7 +429,12 @@ export const footerConfig: FooterConfig = {
  */
 export const sidebarLayoutConfig: SidebarLayoutConfig = {
 	// 侧边栏位置：单侧(unilateral)或双侧(both)
+<<<<<<< HEAD
 	position: "unilateral",
+=======
+	position: "both",
+	showRightControlButton: true, // 是否显示右侧边栏切换按钮
+>>>>>>> 266a86d74c5d7284999a4a77d98e3cb59108d51a
 
 	// 侧边栏组件配置列表
 	components: [

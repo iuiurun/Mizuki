@@ -288,6 +288,7 @@ export type WidgetComponentConfig = {
 
 export type SidebarLayoutConfig = {
 	position: "unilateral" | "both"; // 侧边栏位置：单侧或双侧
+	showRightControlButton: boolean; // 是否显示右侧边栏切换按钮
 	components: WidgetComponentConfig[]; // 组件配置列表
 	defaultAnimation: {
 		enable: boolean; // 是否启用默认动画
