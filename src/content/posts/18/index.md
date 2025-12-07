@@ -9,6 +9,8 @@ draft: false
 pinned: false
 ---
 
+
+>>>>>>> 545efd11f6a2d58b03cfbeae468be77074ed89e4
 最近发现一个还能白嫖的免费域名后缀 —— **de5.net**，最重要的是**支持直接托管到 Cloudflare**，完美支持 IPv4 + IPv6 双栈解析，完全免费！
 
 ### 一、注册免费 de5.net 域名
@@ -30,8 +32,13 @@ pinned: false
 4. Cloudflare 会扫描现有 DNS 记录（基本没有，跳过即可）  
 最后一步会给你两个 Cloudflare 的 Nameserver（NS）地址，例如：
 ns1.cloudflare.com
+<<<<<<< HEAD
    ns2.cloudflare.com
 
+=======
+   ns2.cloudflare.com
+
+>>>>>>> 545efd11f6a2d58b03cfbeae468be77074ed89e4
 （实际以你页面显示为准，每个账号分配的 NS 可能不一样）
 
 ### 三、回到 dnshe.com 修改 NS 记录
@@ -68,5 +75,10 @@ ns1.cloudflare.com
 
 我的邀请码再次放出：**SEBE5C1B9F**（如果显示已用，说明被抢光了，欢迎留言交换～）
 
+<<<<<<< HEAD
 白嫖愉快！✌
 
+=======
+白嫖愉快！✌
+
+>>>>>>> 545efd11f6a2d58b03cfbeae468be77074ed89e4
