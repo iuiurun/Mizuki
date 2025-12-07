@@ -1,14 +1,13 @@
 ---
 title: 免费域名并添加至 Cloudflare 支持解析 IPv6（已亲测可用）
-published: 2025-10-20
-description: "支持直接改NS托管到 Cloudflare Free 计划，完美支持 IPv4 + IPv6 解析（AAAA + 橙色云代理）
-
-"
-image: ""
-tags: ["cloudflare,免费域名"]
+published: 2025-12-07T08:00:00
+description: 支持直接改NS托管到 Cloudflare Free 计划，完美支持 IPv4 + IPv6 解析（AAAA + 橙色云代理）
+image: 
+tags: [cloudflare,免费域名]
 category: 域名
 draft: false
 ---
+
 
 最近发现一个还能白嫖的免费域名后缀 —— **de5.net**，最重要的是**支持直接托管到 Cloudflare**，完美支持 IPv4 + IPv6 双栈解析，完全免费！
 
